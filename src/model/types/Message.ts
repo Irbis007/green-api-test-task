@@ -6,4 +6,5 @@ export type Message = {
   sendByApi?: boolean;
   statusMessage?: string;
   textMessage: string;
+  type: "incoming" | "outcoming";
 };
