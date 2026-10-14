@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+    --bg: #101722;
+    --bg-secondary: #151f2d;
+    --surface: #1b2738;
+    --surface-elevated: #233248;
+    --surface-hover: #293a51;
+    --border: #2b3a50;
+    --border-subtle: #223044;
+
+    --foreground: #f1f5f9;
+    --foreground-secondary: #9baec4;
+    --foreground-muted: #71849b;
+
+    --primary: #5296f5;
+    --primary-hover: #70acff;
+    --primary-active: #367bd9;
+    --primary-foreground: #ffffff;
+
+    --success: #4cc9a0;
+    --warning: #f3bd62;
+    --destructive: #f07178;
+    --info: #70acff;
+
+    --focus-ring: #5296f5;
+    --overlay: rgb(3 9 18 / 65%);
+
+    --message-incoming: #1b2738;
+    --message-outgoing: #263e5b;
+    --message-outgoing-text: #f1f5f9;
+}
+
+@theme inline {
+    --color-bg: var(--bg);
+    --color-bg-secondary: var(--bg-secondary);
+
+    --color-surface: var(--surface);
+    --color-surface-elevated: var(--surface-elevated);
+    --color-surface-hover: var(--surface-hover);
+
+    --color-border: var(--border);
+    --color-border-subtle: var(--border-subtle);
+
+    --color-foreground: var(--foreground);
+    --color-foreground-secondary: var(--foreground-secondary);
+    --color-foreground-muted: var(--foreground-muted);
+
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
+    --color-primary-active: var(--primary-active);
+    --color-primary-foreground: var(--primary-foreground);
+
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-destructive: var(--destructive);
+    --color-info: var(--info);
+
+    --color-focus-ring: var(--focus-ring);
+    --color-overlay: var(--overlay);
+
+    --color-message-incoming: var(--message-incoming);
+    --color-message-outgoing: var(--message-outgoing);
+    --color-message-outgoing-text: var(--message-outgoing-text);
+}
+#root {
+    height: 100svh;
+}
