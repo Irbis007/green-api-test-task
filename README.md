@@ -7,8 +7,8 @@
    Также можно клонировать репозиторий через терминал:
 
    ```bash
-   git clone <URL-репозитория>
-   cd <название-проекта>
+   git clone https://github.com/Irbis007/green-api-test-task.git
+   cd green-api-test-task
    ```
 
 2. **Установить зависимости**
