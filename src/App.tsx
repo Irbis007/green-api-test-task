@@ -51,22 +51,29 @@ function App() {
   return (
     <div className="flex h-full">
       <div className="flex flex-col w-80 h-full bg-sidebar-rail border-r border-border">
-        <div className="flex gap-2 h-15 p-2 border-b border-border">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (phoneNumber.length) {
+              setActiveChat(phoneNumber);
+              setChats(phoneNumber);
+            }
+          }}
+          className="flex gap-2 h-15 p-2 border-b border-border"
+        >
           <input
             className="w-full h-10 px-2 bg-bg-secondary rounded-lg border border-border text-white"
             type="text"
             placeholder="Phone number"
             value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          <Button
-            onClick={() => {
-              setActiveChat(phoneNumber);
-              setChats(phoneNumber);
+            onChange={(e) => {
+              if (!Number.isNaN(+e.target.value)) {
+                setPhoneNumber(e.target.value);
+              }
             }}
-            title="Invite"
           />
-        </div>
+          <Button title="Invite" />
+        </form>
         <div className="grow">
           {chats.map((item) => (
             <div
