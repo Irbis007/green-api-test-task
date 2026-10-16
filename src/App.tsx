@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { LoginPage } from "./LoginPage";
 import { useInstanceStore } from "./model/store/instanceStore";
 import type { Message } from "./model/types";
